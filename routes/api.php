@@ -34,6 +34,7 @@ Route::post('/Email_otp',[Email_otpController::class,'Email_otp']);
 Route::post('/Verify_otp',[Verify_otpController::class,'Verify_otp']);
 Route::post('/Resend_otp',[Resend_otpController::class,'Resend_otp']);
 Route::post('/User_name',[UserController::class,'User']);
+Route::post('/profile',[ProfileController::class,'profile']);
 Route::post('/Map',[MapController::class,'map']);
 Route::post('/Search',[ConstituenciesController::class,'search']);
-Route::get('/considetails/{id}/{user}/{count}/{map_id}',[ConsiDetailsController::class,'constituencyDetails']);
+Route::post('/considetails',[ConsiDetailsController::class,'constituencyDetails']);
